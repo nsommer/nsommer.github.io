@@ -1,0 +1,10 @@
+//
+// A grid is the basic container for a collection of one or more cells.
+//
+
+.grid {
+  display: block;
+  box-sizing: border-box;
+
+  @include clearfix;
+}

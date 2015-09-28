@@ -1,0 +1,52 @@
+//
+// Define all variables here.
+// Adjust those values to generate your custom grid system.
+//
+
+// Gutter between cells.
+$gutter: 1em;
+
+// Number of grids that float next to each other in one row.
+$cells-per-row: 10;
+
+// Dictionary for number<->word mapping.
+// Needed to generate human readable class names.
+//
+// If you need smaller cells, add entries to the dictionary map.
+
+$dictionary: (
+  2:  "half",
+  3:  "third",
+  4:  "quarter",
+  5:  "fifth",
+  6:  "sixth",
+  7:  "seventh",
+  8:  "eigth",
+  9:  "ninth",
+  10: "tenth",
+  11: "eleventh",
+  12: "twelfth",
+  13: "thirteenth",
+  14: "fourteenth",
+  15: "fifteenth"
+);
+
+// Enable/Disable responsive size classes.
+$responsive-size-classes: true;
+
+// Define break points for responsive design here.
+//
+// Width classes:
+//
+//          width < 720px     (e.g. smartphones)
+// 720px  < width < 960px     (e.g. tablets)
+// 960px  < width < 1200px    (e.g. notebooks)
+// 1200px < width             (e.g. desktops with large screens)
+//
+// You can add new width breakpoints to the grid system by adding an entry to the $width-breakpoints map.
+
+$width-breakpoints: (
+  "tablet":     720px,
+  "desktop":    960px,
+  "widescreen": 1200px
+);

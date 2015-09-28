@@ -1,0 +1,116 @@
+/*
+ * Scaffolding.
+ * ==============================
+ */
+
+body {
+  background-color: #efefef;
+  color: #333;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h3 {
+  color: #c0c0c0;
+}
+
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+p {
+  margin-top: .5em;
+}
+
+a {
+  text-decoration: none;
+  color: #2455c3;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+/*
+ * The boxes.
+ * ==============================
+ */
+
+.user,
+.repo {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: .33em;
+  padding: .5em;
+  margin-top: 1em;
+  position: relative;
+}
+
+.repo {
+  min-height: 150px;
+}
+.user {
+  min-height: 330px; /* 150px * 2 (repo boxes) + 14px * 2 (2x .5em padding per repo) + 1px * 2 (2 add. borders) */
+  text-align: center;
+}
+
+/*
+ * Additional details.
+ * ==============================
+ */
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-rounded { border-radius: 0.3em; }
+
+small { color: #c0c0c0; }
+
+.counters {
+  list-style-type: none;
+  padding-left: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.counter {
+  display: inline-block;
+  color: #c0c0c0;
+  font-size: .8em;
+}
+
+.counter:not(:first-child) { margin-left: 1em; }
+
+.links {
+  list-style-type: none;
+  padding-left: 0;
+  margin: .5em 0;
+}
+
+/*
+ * Responsive containers.
+ * ==============================
+ */
+
+.container {
+  margin: 1em auto;
+  width: 480px;
+}
+
+@media (min-width: 720px) {
+  .container { width: 640px; }
+}
+
+@media (min-width: 960px) {
+  .container { width: 720px; }
+}
+
+@media (min-width: 1200px) {
+  .container { width: 940px; }
+}

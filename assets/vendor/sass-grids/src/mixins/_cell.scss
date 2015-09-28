@@ -1,0 +1,62 @@
+//
+// Mixins for generation of cell sizes.
+//
+
+// Build styles for a cell.
+
+@function calc-width($index) {
+  @return 100% * (1 / $index);
+}
+
+@mixin build-cell($index) {
+  width: calc-width($index);
+}
+
+@mixin build-offset($index) {
+  margin-left: calc-width($index);
+}
+
+// Validate variables set by user.
+
+@if ($cells-per-row > (length($dictionary) + 1)) {
+  @error "For #{$cells-per-row} you need at least #{$cells-per-row - 1} entries in the dictionary map.";
+}
+
+@if ($cells-per-row < 1) {
+  @error "$cells-per-row must be greater than zero.";
+} @else if($cells-per-row == 1) {
+  @warn "Setting $cells-per-row to 1 does not make any sense! You should set it to at least 2.";
+}
+
+@mixin build-cell-sizes($index) {
+  // Standard cell size and offset.
+  .cell-#{map-get($dictionary, $index)} {
+    @include build-cell($index);
+  }
+
+  .cell-offset-#{map-get($dictionary, $index)} {
+    @include build-offset($index);
+  }
+
+  @if $responsive-size-classes {
+    // Responsive size classes.
+    @each $name, $width in $width-breakpoints {
+      @media (min-width: $width) {
+        .cell-#{$name}-#{map-get($dictionary, $index)} {
+          @include build-cell($index);
+        }
+
+        .cell-offset-#{$name}-#{map-get($dictionary, $index)} {
+          @include build-offset($index);
+        }
+      }
+    }
+  }
+}
+
+// Generate the cell size classes.
+
+@for $index from 2 through $cells-per-row {
+  @include build-cell-sizes($index);
+}
+

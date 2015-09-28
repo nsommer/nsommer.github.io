@@ -1,0 +1,21 @@
+{
+  "name": "sass-grids",
+  "version": "0.1.0",
+  "description": "A simple float based grid system",
+  "license": "MIT",
+  "author": {
+    "name": "Nils Sommer",
+    "url": "https://nilssommer.de"
+  },
+  "copyright": "2015",
+  "url": "https://github.com/nsommer/sass-grids",
+  "respository": {
+    "type": "git",
+    "url": "https://github.com/nsommer/sass-grids.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-cssmin": "~0.14.0",
+    "grunt-contrib-sass": "~0.9.2"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "nsommer.github.io",
+  "version": "0.1.0",
+  "authors": [
+    "Nils Sommer"
+  ],
+  "description": "GitHub user page of Nils Sommer (nsommer)",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "https://nilssommer.de",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "normalize-css": "~3.0.3",
+    "sass-grids": "nsommer/sass-grids#~0.1.0"
+  }
+}
