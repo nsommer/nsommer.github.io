@@ -1,15 +1,14 @@
 {
   "name": "sass-grids",
   "homepage": "https://github.com/nsommer/sass-grids",
-  "version": "0.1.0",
-  "_release": "0.1.0",
+  "version": "0.1.1",
+  "_release": "0.1.1",
   "_resolution": {
     "type": "version",
-    "tag": "0.1.0",
-    "commit": "665aa394f0eb6dec546e535c04146e1c73360254"
+    "tag": "0.1.1",
+    "commit": "af20129ab4fe6348bcfa913f9c3ceac2a5e791f6"
   },
   "_source": "git://github.com/nsommer/sass-grids.git",
-  "_target": "~0.1.0",
-  "_originalSource": "nsommer/sass-grids",
-  "_direct": true
+  "_target": "~0.1.1",
+  "_originalSource": "nsommer/sass-grids"
 }

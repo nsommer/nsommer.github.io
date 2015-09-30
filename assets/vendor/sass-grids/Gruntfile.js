@@ -6,6 +6,7 @@
 
 module.exports = function (grunt) {
   grunt.initConfig({
+
     pkg: grunt.file.readJSON('package.json'),
     sass: {
       dist: {
@@ -13,7 +14,7 @@ module.exports = function (grunt) {
           style: 'expanded'
         },
         files: {
-          'dist/sass-grids.min.css': 'src/sass-grids.scss'
+          'dist/sass-grids.css': 'src/sass-grids.scss'
         }
       }
     },

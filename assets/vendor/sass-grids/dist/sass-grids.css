@@ -1,3 +1,38 @@
+.cell-full {
+  width: 100%;
+}
+
+.cell-offset-full {
+  margin-left: 100%;
+}
+
+@media (min-width: 720px) {
+  .cell-tablet-full {
+    width: 100%;
+  }
+
+  .cell-offset-tablet-full {
+    margin-left: 100%;
+  }
+}
+@media (min-width: 960px) {
+  .cell-desktop-full {
+    width: 100%;
+  }
+
+  .cell-offset-desktop-full {
+    margin-left: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .cell-widescreen-full {
+    width: 100%;
+  }
+
+  .cell-offset-widescreen-full {
+    margin-left: 100%;
+  }
+}
 .cell-half {
   width: 50%;
 }

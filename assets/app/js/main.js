@@ -28,7 +28,7 @@ $.ajax({
 // Build a repo box.
 
 function buildRepoBox(repo) {
-  var box = '<div class="cell cell-tablet-half cell-desktop-third cell-widescreen-quarter">'
+  var box = '<div class="cell cell-full cell-tablet-half cell-desktop-third cell-widescreen-quarter">'
   box += '<div class="repo">'
   box += '<h2><a href="' + repo.html_url + '">' + repo.name + '</a></h2>'
   box += '<small>' + repo.language + '</small>'

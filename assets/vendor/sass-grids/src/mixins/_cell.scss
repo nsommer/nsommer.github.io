@@ -56,7 +56,7 @@
 
 // Generate the cell size classes.
 
-@for $index from 2 through $cells-per-row {
+@for $index from 1 through $cells-per-row {
   @include build-cell-sizes($index);
 }
 
